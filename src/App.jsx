@@ -1,6 +1,7 @@
 import "./App.css";
-import Option from "./option/Option.jsx";
 import Description from "./description/Description.jsx";
+
+// import Option from "./option/Option.jsx";
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
       <div>
         <Description/>
 
-        <Option/>
+        {/*<Option/>*/}
       </div>
   );
 }
