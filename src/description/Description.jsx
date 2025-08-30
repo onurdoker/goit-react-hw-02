@@ -1,0 +1,17 @@
+import Option from "../option/Option.jsx";
+
+const Description = () => {
+  return (
+      <div>
+
+        <h1>
+          Sip Happens Café
+        </h1>
+        <p>
+          Please leave your feedback about our services by selecting one of the options below.
+        </p>
+      </div>
+  );
+};
+
+export default Description;
