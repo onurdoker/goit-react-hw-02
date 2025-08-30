@@ -42,16 +42,18 @@ function App() {
     }
   };
 
+  const totalFeedback = good + bad + neutral;
+
   return (
       <div>
         <Description/>
 
-        <Option handleCount={handleCount}/>
+        <Option handleCount={handleCount}
+                totalFeedback={totalFeedback}/>
 
         <Feedback good={good}
                   bad={bad}
                   neutral={neutral}/>
-
       </div>
   );
 }
