@@ -2,6 +2,7 @@ import "./App.css";
 import {useState} from "react";
 import Description from "./description/Description.jsx";
 import Option from "./option/Option.jsx";
+import Feedback from "./feedback/Feedback.jsx";
 
 function App() {
   const [good, setGood] = useState (0);
@@ -25,10 +26,13 @@ function App() {
   return (
       <div>
         <Description/>
+
         <Option handleCount={handleCount}/>
-        <p>Good: {good}</p>
-        <p>Bad: {bad}</p>
-        <p>Neutral: {neutral}</p>
+
+        <Feedback good={good}
+                  bad={bad}
+                  neutral={neutral}/>
+
       </div>
   );
 }
